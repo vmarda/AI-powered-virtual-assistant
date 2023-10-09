@@ -1,0 +1,8 @@
+Enabling Longpaths on Windows:
+
+1. New-ItemProperty -Path "HKLM:\SYSTEM\CurrentControlSet\Control\FileSystem" `
+ -Name "LongPathsEnabled" -Value 1 -PropertyType DWORD -Force 
+
+2.  git config --system core.longpaths true
+
+resource: https://hub.tcno.co/windows/tips/fix-filename-too-long/#enabling-longpaths-on-windows
